@@ -1,61 +1,47 @@
 {
-  "name": "nativescript-pdf-view",
-  "version": "0.0.0-development",
-  "description": "A NativeScript plugin to display PDF files on iOS and Android",
-  "main": "index.js",
-  "scripts": {
-    "commit": "git-cz",
-    "commitmsg": "cz-customizable-ghooks",
-    "setup": "cd src && npm ci && cd demo && npm ci && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
-  },
-  "release": {
-    "generateNotes": "./node_modules/@semantic-release/release-notes-generator"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/madmas/nativescript-pdf-view.git"
-  },
-  "author": "Markus Schlichting",
-  "keywords": [
-    "Android",
-    "JavaScript",
-    "NativeScript",
-    "PDF",
-    "View",
-    "iOS"
-  ],
-  "contributors": [
-    {
-      "name": "Merott Movahedi",
-      "email": "merott@merott.com"
-    },
-    {
-      "name": "Markus Schlichting",
-      "email": "m.schlichting@mynethome.de"
-    }
-  ],
-  "bugs": {
-    "url": "https://github.com/madmas/nativescript-pdf-view/issues"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/madmas/nativescript-pdf-view#readme",
-  "readmeFilename": "README.md",
-  "devDependencies": {
-    "commitizen": "^4.1.2",
-    "cz-customizable": "^6.3.0",
-    "cz-customizable-ghooks": "^1.5.0",
-    "husky": "^0.13.4",
-    "prompt": "~1.0.0",
-    "rimraf": "3.0.0",
-    "tslint": "^5.2.0",
-    "typescript": "~2.3.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": ".cz-config.js"
-    }
-  }
+	"name": "plugins",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"setup": "npx rimraf node_modules package-lock.json dist tmp && npm i && ts-patch install",
+		"start": "nps",
+		"add": "nx g @nativescript/plugin-tools:add-package",
+		"add-angular": "nx g @nativescript/plugin-tools:add-angular",
+		"config": "nx g @nativescript/plugin-tools:config",
+		"publish-packages": "nx g @nativescript/plugin-tools:publish"
+	},
+	"private": true,
+	"devDependencies": {
+		"@angular/animations": "~10.1.0",
+		"@angular/common": "~10.1.0",
+		"@angular/compiler": "~10.1.0",
+		"@angular/compiler-cli": "~10.1.0",
+		"@angular/core": "~10.1.0",
+		"@angular/forms": "~10.1.0",
+		"@angular/platform-browser": "~10.1.0",
+		"@angular/platform-browser-dynamic": "~10.1.0",
+		"@angular/router": "~10.1.0",
+		"@nativescript/angular": "~10.1.0",
+		"@nativescript/core": "~7.0.0",
+		"@nativescript/plugin-tools": "~1.0.0",
+		"@nativescript/types": "~7.0.0",
+		"@nativescript/webpack": "~3.0.0",
+		"@ngtools/webpack": "~10.1.0",
+		"nativescript-vue": "~2.8.0",
+		"nativescript-vue-template-compiler": "~2.8.0",
+		"ng-packagr": "~10.1.0",
+		"rxjs": "~6.6.0",
+		"typescript": "~3.9.7",
+		"zone.js": "0.11.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"**/*": [
+			"nx format:write --files"
+		]
+	}
 }

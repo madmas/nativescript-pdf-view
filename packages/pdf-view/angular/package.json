@@ -1,0 +1,16 @@
+{
+	"name": "nativescript-nativescript-pdf-view-angular",
+	"ngPackage": {
+		"lib": {
+			"entryFile": "index.ts",
+			"umdModuleIds": {
+				"@nativescript/core": "ns-core",
+				"@nativescript/angular": "ns-angular",
+				"@nativescript/pdf-view": "ns-nativescript-pdf-view"
+			}
+		},
+		"whitelistedNonPeerDependencies": [
+			"."
+		]
+	}
+}

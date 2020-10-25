@@ -1,0 +1,6 @@
+<ActionBar title="pdf-view" class="action-bar"> </ActionBar>
+
+<FlexboxLayout flexDirection="column" height="100%">
+	<Button height="70" text="Show Another!" (tap)="changePDF()" class="btn btn-primary"></Button>
+	<pdf:PDFView height="100%" flexGrow="1" [src]="pdfUrl" (load)="onLoad()" [enableAnnotationRendering]="enableAnnotationRendering" />
+</FlexboxLayout>
