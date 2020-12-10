@@ -4,6 +4,7 @@
 	"license": "MIT",
 	"scripts": {
 		"setup": "npx rimraf node_modules package-lock.json dist tmp && npm i && ts-patch install",
+		"build": "nx run nativescript-pdf-view:build.all",
 		"start": "nps",
 		"add": "nx g @nativescript/plugin-tools:add-package",
 		"add-angular": "nx g @nativescript/plugin-tools:add-angular",
@@ -27,15 +28,17 @@
 		"@nativescript/types": "~7.0.0",
 		"@nativescript/webpack": "~3.0.0",
 		"@ngtools/webpack": "~10.1.0",
+		"commitizen": "^4.1.2",
+		"cz-customizable": "^6.3.0",
+		"cz-customizable-ghooks": "^1.5.0",
 		"nativescript-vue": "~2.8.0",
 		"nativescript-vue-template-compiler": "~2.8.0",
 		"ng-packagr": "~10.1.0",
+		"nps": "^5.10.0",
+		"nx": "^10.4.7",
 		"rxjs": "~6.6.0",
 		"typescript": "~3.9.7",
-		"zone.js": "0.11.1",
-		"commitizen": "^4.1.2",
-		"cz-customizable": "^6.3.0",
-		"cz-customizable-ghooks": "^1.5.0"
+		"zone.js": "~0.10.3"
 	},
 	"husky": {
 		"hooks": {
