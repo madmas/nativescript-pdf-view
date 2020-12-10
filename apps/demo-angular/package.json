@@ -15,7 +15,7 @@
 		"reflect-metadata": "file:../../node_modules/reflect-metadata",
 		"rxjs": "file:../../node_modules/rxjs",
 		"zone.js": "file:../../node_modules/zone.js",
-		"@nativescript/pdf-view": "file:../../dist/packages/pdf-view"
+		"nativescript-pdf-view": "file:../../dist/packages/nativescript-pdf-view"
 	},
 	"devDependencies": {
 		"@angular/compiler-cli": "file:../../node_modules/@angular/compiler-cli",

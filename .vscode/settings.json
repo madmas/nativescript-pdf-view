@@ -1,13 +1,13 @@
 {
-	"NativescriptExtend.fileAssociations": [
-		{
-			"systemId": "/Users/boriss/Development/boris01/nativescript-pdf-view/schema/tns.xsd",
-			"pattern": "**/**/*.xml"
+	"files.exclude": {
+		"**/*.js": {
+			"when": "$(basename).ts"
 		},
-		{
-			"systemId": "http://www.w3.org/2001/XMLSchema.xsd",
-			"pattern": "/Users/boriss/Development/boris01/nativescript-pdf-view/schema/tns.xsd"
+		"**/*.js.map": {
+			"when": "$(basename)"
 		}
+	},
+	"NativescriptExtend.fileAssociations": [
 	],
 	"files.exclude": {
 		"schema": true

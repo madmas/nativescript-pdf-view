@@ -4,7 +4,7 @@
 		"types": ["node"],
 		"baseUrl": ".",
 		"paths": {
-			"@nativescript/pdf-view": ["../../../dist/packages/pdf-view"]
+			"nativescript-pdf-view": ["../../../dist/packages/nativescript-pdf-view"]
 		}
 	}
 }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { registerElement } from '@nativescript/angular';
-import { PDFView } from '@nativescript/pdf-view';
+import { PDFView } from 'nativescript-pdf-view';
 
 @NgModule()
 export class PDFViewModule {}

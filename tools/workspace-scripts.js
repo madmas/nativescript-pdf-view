@@ -62,13 +62,10 @@ module.exports = {
 		},
 		// packages
 		// build output is always in dist/packages
-		'@nativescript': {
-			// @nativescript/pdf-view
-			'pdf-view': {
-				build: {
-					script: 'nx run pdf-view:build.all',
-					description: '@nativescript/pdf-view: Build',
-				},
+		'nativescript-pdf-view': {
+			build: {
+				script: 'nx run nativescript-pdf-view:build.all',
+				description: 'nativescript-pdf-view: Build',
 			},
 			'build-all': {
 				script: 'nx run all:build',
@@ -81,8 +78,8 @@ module.exports = {
 		},
 		focus: {
 			'pdf-view': {
-				script: 'nx run pdf-view:focus',
-				description: 'Focus on @nativescript/pdf-view',
+				script: 'nx run nativescript-pdf-view:focus',
+				description: 'Focus on nativescript-pdf-view',
 			},
 			reset: {
 				script: 'nx run all:focus',

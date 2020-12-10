@@ -1,5 +1,5 @@
 import { DemoSharedBase } from '../utils';
-import {} from '@nativescript/pdf-view';
+import {} from 'nativescript-pdf-view';
 
 export class DemoSharedPdfView extends DemoSharedBase {
 	testIt() {

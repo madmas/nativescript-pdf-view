@@ -15,7 +15,7 @@ My aim is to keep the features consistent across iOS and Android.
 ## Installation
 
 ```
-ns plugin add @nativescript/pdf-view
+ns plugin add nativescript-pdf-view
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ ns plugin add @nativescript/pdf-view
 ```xml
 <Page
   xmlns="http://schemas.nativescript.org/tns.xsd"
-  xmlns:pdf="@nativescript/pdf-view"
+  xmlns:pdf="nativescript-pdf-view"
   loaded="pageLoaded">
   <pdf:PDFView src="{{ pdfUrl }}" load="{{ onLoad }}" />
 </Page>
@@ -36,7 +36,7 @@ ns plugin add @nativescript/pdf-view
 Import in module
 
 ```ts
-import { PDFViewModule } from '@nativescript/pdf-view/angular';
+import { PDFViewModule } from 'nativescript-pdf-view/angular';
 ```
 
 ```html
@@ -54,3 +54,10 @@ There are sample applications avalable:
 - _Plain TypeScript_: see [demo/](https://github.com/madmas/nativescript-pdf-view/tree/master/demo) folder in this repository
 - _NativeScript+Angular_: [nativescript-pdf-view-angular-sample](https://github.com/madmas/nativescript-pdf-view-angular-sample) repository
 - _NativeScript+VueJs_: [nativescript-pdf-view-vue-sample](https://github.com/madmas/nativescript-pdf-view-vue-sample) repository
+
+
+## Development
+
+This repo has been migrated to an ``nx workspace`` that profits from the `@nativescript/plugin-tools` schematics plugin.
+
+NX has an interactive menue you can start with `npm run start` (after `npm install` ).

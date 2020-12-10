@@ -7,7 +7,7 @@
 			"projectType": "application",
 			"prefix": "demo",
 			"architect": {
-				"ios": {
+				"ios-emu": {
 					"builder": "@nrwl/workspace:run-commands",
 					"options": {
 						"commands": ["ns debug ios --no-hmr --emulator --env.testing"],
@@ -15,10 +15,26 @@
 						"parallel": false
 					}
 				},
-				"android": {
+				"android-emu": {
 					"builder": "@nrwl/workspace:run-commands",
 					"options": {
 						"commands": ["ns debug android --no-hmr --emulator --env.testing"],
+						"cwd": "apps/demo",
+						"parallel": false
+					}
+				},
+				"ios-emu": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["ns debug ios --no-hmr  --env.testing"],
+						"cwd": "apps/demo",
+						"parallel": false
+					}
+				},
+				"android-emu": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["ns debug android --no-hmr --env.testing"],
 						"cwd": "apps/demo",
 						"parallel": false
 					}
@@ -39,7 +55,7 @@
 			"projectType": "application",
 			"prefix": "demo",
 			"architect": {
-				"ios": {
+				"ios-emu": {
 					"builder": "@nrwl/workspace:run-commands",
 					"options": {
 						"commands": ["ns debug ios --no-hmr --emulator --env.testing"],
@@ -47,10 +63,26 @@
 						"parallel": false
 					}
 				},
-				"android": {
+				"android-emu": {
 					"builder": "@nrwl/workspace:run-commands",
 					"options": {
 						"commands": ["ns debug android --no-hmr --emulator --env.testing"],
+						"cwd": "apps/demo-angular",
+						"parallel": false
+					}
+				},
+				"ios": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["ns debug ios --env.testing"],
+						"cwd": "apps/demo-angular",
+						"parallel": false
+					}
+				},
+				"android": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["ns debug android --env.testing"],
 						"cwd": "apps/demo-angular",
 						"parallel": false
 					}
@@ -73,7 +105,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx run pdf-view:build.all"],
+						"commands": ["nx run nativescript-pdf-view:build.all"],
 						"parallel": false
 					}
 				},
@@ -87,26 +119,26 @@
 				}
 			}
 		},
-		"pdf-view": {
-			"root": "packages/pdf-view",
-			"sourceRoot": "packages/pdf-view",
+		"nativescript-pdf-view": {
+			"root": "packages/nativescript-pdf-view",
+			"sourceRoot": "packages/nativescript-pdf-view",
 			"projectType": "library",
 			"schematics": {},
 			"architect": {
 				"build": {
 					"builder": "@nrwl/node:package",
 					"options": {
-						"outputPath": "dist/packages/pdf-view",
-						"tsConfig": "packages/pdf-view/tsconfig.json",
-						"packageJson": "packages/pdf-view/package.json",
-						"main": "packages/pdf-view/index.ts",
+						"outputPath": "dist/packages/nativescript-pdf-view",
+						"tsConfig": "packages/nativescript-pdf-view/tsconfig.json",
+						"packageJson": "packages/nativescript-pdf-view/package.json",
+						"main": "packages/nativescript-pdf-view/index.ts",
 						"assets": [
-							"packages/pdf-view/*.md",
-							"packages/pdf-view/index.d.ts",
+							"packages/nativescript-pdf-view/*.md",
+							"packages/nativescript-pdf-view/index.d.ts",
 							"LICENSE",
 							{
 								"glob": "**/*",
-								"input": "packages/pdf-view/platforms/",
+								"input": "packages/nativescript-pdf-view/platforms/",
 								"output": "./platforms/"
 							}
 						]
@@ -116,7 +148,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx run pdf-view:build", "node tools/scripts/build-finish.ts pdf-view"],
+						"commands": ["nx run nativescript-pdf-view:build", "node tools/scripts/build-finish.ts nativescript-pdf-view"],
 						"parallel": false
 					}
 				},
@@ -124,7 +156,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx g @nativescript/plugin-tools:focus-packages pdf-view"],
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages nativescript-pdf-view"],
 						"parallel": false
 					}
 				}

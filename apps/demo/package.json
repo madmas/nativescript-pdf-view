@@ -6,7 +6,7 @@
 	"dependencies": {
 		"nativescript-theme-core": "file:../../node_modules/nativescript-theme-core",
 		"@nativescript/core": "file:../../node_modules/@nativescript/core",
-		"@nativescript/pdf-view": "file:../../packages/pdf-view"
+		"nativescript-pdf-view": "file:../../packages/nativescript-pdf-view"
 	},
 	"devDependencies": {
 		"@nativescript/android": "7.0.1",
