@@ -1,0 +1,41 @@
+{
+	"name": "@nativescript/pdf-view",
+	"version": "1.0.0",
+	"description": "A NativeScript plugin to display PDF files on iOS and Android",
+	"main": "index",
+	"typings": "index.d.ts",
+	"nativescript": {
+		"platforms": {
+			"ios": "6.0.0",
+			"android": "6.0.0"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/madmas/nativescript-pdf-view.git"
+	},
+	"keywords": [
+		"NativeScript",
+		"JavaScript",
+		"TypeScript",
+		"iOS",
+		"Android"
+	],
+	"author": "Markus Schlichting",
+	"contributors": [
+		{
+			"name": "Merott Movahedi",
+			"email": "merott@merott.com"
+		},
+		{
+			"name": "Markus Schlichting",
+			"email": "m.schlichting@mynethome.de"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/madmas/nativescript-pdf-view/issues"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/madmas/nativescript-pdf-view#readme",
+	"readmeFilename": "README.md"
+}

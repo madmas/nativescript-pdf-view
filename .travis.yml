@@ -1,31 +1,6 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
-notifications:
-  email: true
 node_js:
-  - 10
-
-jobs:
-  include:
-    - stage: test
-      script:
-       - cd src 
-       - npm ci && npm run lint
-    - stage: build
-      script:
-       - cd src 
-       - npm ci && npm run build
-    - stage: release
-      # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script: skip
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script: cp README.md src/ && cd src && npm ci && npx semantic-release
-        on:
-          all_branches: true
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  - "node"
+script:
+- npm run setup
+- npm start @.build-all
