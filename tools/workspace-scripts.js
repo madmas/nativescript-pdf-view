@@ -28,6 +28,14 @@ module.exports = {
 					script: 'nx run demo:clean',
 					description: '⚆  Clean  🧹',
 				},
+				iosEmu: {
+					script: 'nx run demo:ios-emu',
+					description: '⚆  Run iOS in Emulator ',
+				},
+				androidEmu: {
+					script: 'nx run demo:android-emu',
+					description: '⚆  Run Android in Emulator 🤖',
+				},
 				ios: {
 					script: 'nx run demo:ios',
 					description: '⚆  Run iOS  ',
@@ -45,6 +53,14 @@ module.exports = {
 				clean: {
 					script: 'nx run demo-angular:clean',
 					description: '⚆  Clean  🧹',
+				},
+				iosEmu: {
+					script: 'nx run demo-angular:ios-emu',
+					description: '⚆  Run iOS  in Emulator ',
+				},
+				androidEmu: {
+					script: 'nx run demo-angular:android-emu',
+					description: '⚆  Run Android  in Emulator 🤖',
 				},
 				ios: {
 					script: 'nx run demo-angular:ios',
