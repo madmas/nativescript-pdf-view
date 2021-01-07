@@ -51,13 +51,12 @@ Check out the [demo](./demo) folder for a demo application using this plugin. Yo
 
 There are sample applications avalable:
 
-- _Plain TypeScript_: see [demo/](https://github.com/madmas/nativescript-pdf-view/tree/master/demo) folder in this repository
+- _Plain TypeScript_: see [demo/](https://github.com/madmas/nativescript-pdf-view/tree/master/apps/demo) folder in this repository
 - _NativeScript+Angular_: [nativescript-pdf-view-angular-sample](https://github.com/madmas/nativescript-pdf-view-angular-sample) repository
 - _NativeScript+VueJs_: [nativescript-pdf-view-vue-sample](https://github.com/madmas/nativescript-pdf-view-vue-sample) repository
 
-
 ## Development
 
-This repo has been migrated to an ``nx workspace`` that profits from the `@nativescript/plugin-tools` schematics plugin.
+This repo has been migrated to an `nx workspace` that profits from the `@nativescript/plugin-tools` schematics plugin.
 
-NX has an interactive menue you can start with `npm run start` (after `npm install` ).
+NX has an interactive menu you can start with `npm run start` (after `npm install` ).

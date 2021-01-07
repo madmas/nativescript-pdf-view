@@ -23,7 +23,7 @@
 		"@angular/platform-browser-dynamic": "~10.1.0",
 		"@angular/router": "~10.1.0",
 		"@nativescript/angular": "~10.1.0",
-		"@nativescript/core": "~7.0.0",
+		"@nativescript/core": "~7.1.0",
 		"@nativescript/plugin-tools": "~1.0.0",
 		"@nativescript/types": "~7.0.0",
 		"@nativescript/webpack": "~3.0.0",
@@ -34,11 +34,9 @@
 		"nativescript-vue": "~2.8.0",
 		"nativescript-vue-template-compiler": "~2.8.0",
 		"ng-packagr": "~10.1.0",
-		"nps": "^5.10.0",
-		"nx": "^10.4.7",
 		"rxjs": "~6.6.0",
 		"typescript": "~3.9.7",
-		"zone.js": "~0.10.3"
+		"zone.js": "0.11.1"
 	},
 	"husky": {
 		"hooks": {
@@ -49,8 +47,5 @@
 		"**/*": [
 			"nx format:write --files"
 		]
-	},
-	"dependencies": {
-		"nativescript-pdf-view": "^2.4.3"
 	}
 }
